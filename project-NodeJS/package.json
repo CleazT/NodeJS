@@ -4,6 +4,7 @@
   "description": "Ini adalah latihan NodeJS Muhammad Dzaki Gunawan",
   "main": "app.js",
   "scripts": {
+    "start2": "node https-server.mjs",
     "start": "node http-client.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
