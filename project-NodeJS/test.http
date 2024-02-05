@@ -1,0 +1,8 @@
+POST http://localhost:8500
+content-type: application/json
+accept: application/json
+
+{
+    firstName: "John",
+    lastName: "Doe",
+}

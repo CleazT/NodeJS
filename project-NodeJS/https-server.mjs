@@ -12,9 +12,12 @@ const server = http.createServer((request, response) => {
         });
     } else {
         if (request.url === '/hello') {
-            responsewrite('Hello Again World!');
+            response.write('Hello Again World!');
         } else {
             response.write('Goodbye World!');
         }
+        response.end('ok');
     }
 })
+
+server.listen(8500);
