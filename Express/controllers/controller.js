@@ -1,5 +1,13 @@
-const getAll = (req, res) => {
-    res.send("Ini data dari get all")
+const siswa = require('../model/siswa');
+
+const getAll = async (req, res) => {
+    try {
+        const siswa = await siswa.find();
+        res.status(200).json(siswa);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Server Error' });
+    }
 }
 
 const create = (req, res) => {
