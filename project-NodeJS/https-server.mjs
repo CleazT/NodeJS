@@ -13,7 +13,9 @@ const server = http.createServer((request, response) => {
     } else {
         if (request.url === '/hello') {
             response.write('Hello Again World!');
-        } else {
+        } else if (request.url === '/resha') {
+            response.write('HITAM!');
+        }else {
             response.write('Goodbye World!');
         }
         response.end('ok');
